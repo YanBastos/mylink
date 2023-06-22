@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, #0094ff, #00954d, #cfb700);
+    background-size: 300% 300%;
+    animation: color 9s ease-in-out infinite;
+}
+
+@keyframes color {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.perfil {
+    text-align: center;
+    margin: 30px;
+}
+
+.perfil img {
+    border-radius: 100%;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+.workId h1 {
+    text-align: center;
+}
+
+.workId h3 {
+    text-align: center;
+    font-weight: 400;
+}
+
+.workId h1:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    color: #fff;
+}
+
+.workId h3:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    color: #fff;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.containerLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 90px;
+    margin: 10px auto;
+    background: transparent;
+    border: solid #fff;
+}
+
+.containerLink a {
+    text-decoration: none;
+    color: #fff;
+    padding: 30px;
+    width: 100%;
+}
+
+.containerLink:hover {
+    background-color: #fff;
+    transition: 1s;
+}
+
+.containerLink a:hover {
+    transition: 0.5s;
+    color: #000;
+    cursor: pointer;
+}
+
+.doctype {
+    font: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff9a;
+    padding: 10px;
+}
+
+@media screen and (max-width : 720px) {
+    .perfil img {
+        max-width: 120px;
+        height: auto;
+    }
+
+    .workId {
+        width: 100%;
+        font: 0.7rem;
+    }
+
+    .containerLink {
+        width: 90%;
+    }
+}
